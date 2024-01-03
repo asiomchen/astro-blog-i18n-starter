@@ -2,8 +2,8 @@ import { ui } from "./ui";
 
 export const LANGUAGES = {
   en: "English",
-  fr: "Français",
-  es: "Español",
+  pl: "Polski",
+
 };
 
 export const DEFAULT_LANG = "en";

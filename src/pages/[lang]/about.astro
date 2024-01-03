@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 export async function getStaticPaths() {
-  return ["en", "fr", "es"].map((lang) => {
+  return ["en", "pl"].map((lang) => {
     return { params: { lang } };
   });
 }

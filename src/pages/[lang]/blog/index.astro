@@ -12,7 +12,7 @@ const posts = (await getBlogPosts())
   .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
-  return ["en", "fr", "es"].map((lang) => {
+  return ["en", "pl"].map((lang) => {
     return { params: { lang } };
   });
 }

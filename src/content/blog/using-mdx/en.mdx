@@ -21,10 +21,18 @@ Here is how you import and use a UI component inside of MDX.
 When you open this page in the browser, you should see the clickable button below.
 
 import HeaderLink from '../../../components/HeaderLink.astro';
+import { Picture } from 'astro:assets';
+import localImage from './blog-placeholder-5.jpg';
 
 <HeaderLink href="#" onclick="alert('clicked!')">
 	Embedded component in MDX
 </HeaderLink>
+
+![Test image](/blog-placeholder-5.jpg)
+
+Lorem ipsum
+
+<Picture src={localImage} alt="Test image Picture" />
 
 ## More Links
 
