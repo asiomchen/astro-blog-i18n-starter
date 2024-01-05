@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title={t("site.title")} description={t("site.description")} lang={lang}>
+<Layout title={t("site.title")} description={t("site.description")} lang={lang}, pubDate={new Date()}>
   <h1>{t("home.welcome")}</h1>
   <p>
     {t("home.p1")}
