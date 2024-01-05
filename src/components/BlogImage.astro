@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+
+const {src, description, ...attrs} = Astro.props;
+---
+<figure>
+<Image src={src} {...attrs} />
+</figure>
+<figcaption>{description}</figcaption>
+<style>
+  img :global(img), svg {
+    margin-block: 2.5rem;
+    border-radius: 0.75rem;
+  }
+
+    figcaption {
+        font-size: 0.875rem;
+        font-style: italic;
+        text-align: center;
+        color: var(--color-gray-500);
+        margin-top: -1rem;
+    }
+</style>
